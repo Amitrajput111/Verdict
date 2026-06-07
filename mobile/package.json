@@ -6,7 +6,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build:web": "expo export:web --output-dir ./mobile/web-build"
+    "build:web": "expo export:web --output-dir ./web-build"
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.1.3",

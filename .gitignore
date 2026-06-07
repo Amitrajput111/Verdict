@@ -9,3 +9,5 @@ yarn-error.log
 .cache/
 .expo-shared/
 .expo-web/
+
+.vercel

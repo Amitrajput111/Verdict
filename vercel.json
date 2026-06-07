@@ -2,11 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "mobile/web-build/**",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "mobile/web-build"
-      }
+      "src": "mobile/dist/**",
+      "use": "@vercel/static"
     },
     {
       "src": "api/**/*.js",
