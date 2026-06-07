@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+web-build/
+dist/
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+.cache/
+.expo-shared/
+.expo-web/

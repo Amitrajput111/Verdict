@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "mobile/web-build/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "mobile/web-build"
+      }
+    },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.js" },
+    { "src": "/(.*)", "dest": "/mobile/web-build/$1" }
+  ]
+}
