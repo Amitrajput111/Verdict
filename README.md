@@ -45,7 +45,7 @@ npx vercel --prod --yes --token <YOUR_VERCEL_TOKEN>
 This command builds the Expo web bundle (`mobile/dist/`) and deploys both the static assets and the serverless API.
 
 ### Live Demo
-[Visit the live Vercel deployment](https://verdict-o97i8pw01-amitrajput111s-projects.vercel.app)
+[Visit the live Vercel deployment](https://verdict-3ipgycf46-amitrajput111s-projects.vercel.app)
 
 ---
 
