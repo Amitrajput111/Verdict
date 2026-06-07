@@ -4,7 +4,11 @@ import { useAuthStore } from '../store/useAuthStore';
 export const API_URL = Platform.select({
   android: 'http://10.0.2.2:4000',
   ios: 'http://localhost:4000',
-  default: 'http://localhost:4000',
+  default: typeof window !== 'undefined'
+    ? (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      ? 'http://localhost:4000'
+      : window.location.origin + '/api')
+    : 'http://localhost:4000',
 }) as string;
 
 // Helper to make authenticated requests
